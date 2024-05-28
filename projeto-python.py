@@ -1,16 +1,8 @@
-#comecando o teste 
+from tkinter import *
+from tkinter import Tk, ttk
 
-login = []
-senha = []
-
-id = input('digite seu id: ')
-password = input('digite a sua senha numerica: ')
-
-login.append('')
-senha.append('')
-
-
-if id and password == login and senha:
-    print('Login aprovado !')
-else:
-    print('Id ou Senha Incorretos.')
+cor1 = "#141111" # preto
+cor2 = "#feffff" # branco
+cor3 = "#249c89" # verde
+cor4 = "#38576b" # azul escuro (valor)
+cor5 = "#403d3d" # cinza (letra)
