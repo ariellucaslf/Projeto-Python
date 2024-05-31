@@ -61,26 +61,26 @@ def verifica_senha():
 #função apos verificação
 def nova_janela():
     # configurando o frame cima ----------------------
-    _nome = Label(frame_cima, text="usuario :" + credenciais[0], anchor=NE, font=("Ivy 20"), bg=cor1, fg=cor4)
+    l_nome = Label(frame_cima, text="usuario :" + credenciais[0], anchor=NE, font=("Ivy 20"), bg=cor1, fg=cor4)
     l_nome.place(x=5, y=5)
 
     l_linha = Label(frame_cima, text="",  width=275, anchor=NW, font=("Ivy 1"), bg=cor2, fg=cor4)
     l_linha.place(x=10, y=45)
 
-    _nome = Label(frame_baixo, text="seja bem vindo" + credenciais[0], anchor=NE, font=("Ivy 20"), bg=cor1, fg=cor4)
+    l_nome = Label(frame_baixo, text="seja bem vindo" + credenciais[0], anchor=NE, font=("Ivy 20"), bg=cor1, fg=cor4)
     l_nome.place(x=5, y=105)
 
 # configurando o frame baixo ---------------------
 # Usuario
 l_nome = Label(frame_baixo, text="Usuario *", anchor=NW, font=("Ivy 10"), bg=cor1, fg=cor4)
-l_nome.place = Label(x=10, y=20)
+l_nome.place(x=10, y=20)
 e_nome = Entry(frame_baixo, width=25, justify="left", font=("", 15), highlightthickness=1, relief="solid")
 e_nome.place(x=14, y=50) 
 
 # Senha
-l_senha = Label(frame_baixo,command=verifica_senha, text="Senha *", anchor=NW, font=("Ivy 10"), bg=cor1, fg=cor4)
-l_senha.place = Label(x=10, y=95)
-e_senha = Entry(frame_baixo, width=25, justify="left",show='*', font=("", 15), highlightthickness=1, relief="solid")
+l_senha = Label(frame_baixo, command=verifica_senha, text="Senha *", anchor=NW, font=("Ivy 10"), bg=cor1, fg=cor4)
+l_senha.place(x=10, y=95)
+e_senha = Entry(frame_baixo, width=25, justify="left", show='*', font=("", 15), highlightthickness=1, relief="solid")
 e_senha.place(x=14, y=130)
 
 # Botão
