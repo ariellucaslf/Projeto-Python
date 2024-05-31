@@ -32,13 +32,13 @@ l_linha.place(x=10, y=45)
 # configurando o frame baixo ---------------------
 # Usuario
 l_nome = Label(frame_baixo, text="Usuario *", anchor=NW, font=("Ivy 10"), bg=cor1, fg=cor4)
-l_nome.place = Label(x=10, y=20)
+l_nome.place(x=10, y=20)
 e_nome = Entry(frame_baixo, width=25, justify="left", font=("", 15), highlightthickness=1, relief="solid")
 e_nome.place(x=14, y=50)
 
 # Senha
 l_senha = Label(frame_baixo, text="Senha *", anchor=NW, font=("Ivy 10"), bg=cor1, fg=cor4)
-l_senha.place = Label(x=10, y=95)
+l_senha.place(x=10, y=95)
 e_senha = Entry(frame_baixo, width=25, justify="left", font=("", 15), highlightthickness=1, relief="solid")
 e_senha.place(x=14, y=130)
 
