@@ -78,13 +78,13 @@ e_nome = Entry(frame_baixo, width=25, justify="left", font=("", 15), highlightth
 e_nome.place(x=14, y=50) 
 
 # Senha
-l_senha = Label(frame_baixo, command=verifica_senha, text="Senha *", anchor=NW, font=("Ivy 10"), bg=cor1, fg=cor4)
+l_senha = Label(frame_baixo, text="Senha *", anchor=NW, font=("Ivy 10"), bg=cor1, fg=cor4)
 l_senha.place(x=10, y=95)
 e_senha = Entry(frame_baixo, width=25, justify="left", show='*', font=("", 15), highlightthickness=1, relief="solid")
 e_senha.place(x=14, y=130)
 
 # Botão
-b_confirmar = Button(frame_baixo, text="Entrar", width=39, height=2, font=("Ivy 8 bold"), bg=cor2, fg=cor1, relief=RAISED, overrelief=RIDGE)
+b_confirmar = Button(frame_baixo, command=verifica_senha, text="Entrar", width=39, height=2, font=("Ivy 8 bold"), bg=cor2, fg=cor1, relief=RAISED, overrelief=RIDGE)
 b_confirmar.place(x=15, y=180)
 
 janela.mainloop()
